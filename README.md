@@ -1,6 +1,12 @@
 [![Tests](../../actions/workflows/tests-13-sprint.yml/badge.svg)](../../actions/workflows/tests-13-sprint.yml) [![Tests](../../actions/workflows/tests-14-sprint.yml/badge.svg)](../../actions/workflows/tests-14-sprint.yml)
-# Проект Mesto фронтенд + бэкенд
+# Проект Mesto бэкенд
+[Репозиторий проекта](https://github.com/ViktoryPolischuk/express-mesto-gha.git)
 
+## Используемые технологии
+* JavaScript
+* Node.js
+* Express
+* MongoDB
 
 ## Директории
 
