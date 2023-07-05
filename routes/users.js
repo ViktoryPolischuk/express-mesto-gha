@@ -6,13 +6,14 @@ const {
   updateUser,
   updateUserAvatar,
 } = require('../controllers/users');
+const { validateUserId, validateUser, validateAvatar } = require('../utils/validators/users');
 
 const router = express.Router();
 
 router.get('/', getUsers);
 router.get('/me', getCurrentUser);
-router.get('/:userId', getUserById);
-router.patch('/me', updateUser);
-router.patch('/me/avatar', updateUserAvatar);
+router.get('/:userId', validateUserId, getUserById);
+router.patch('/me', validateUser, updateUser);
+router.patch('/me/avatar', validateAvatar, updateUserAvatar);
 
 module.exports = router;
